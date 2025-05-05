@@ -3,7 +3,7 @@ import Image from 'next/image';
 const Header = () => {
   return (
     <>
-      <div className="fixed inset-x-0 flex items-center justify-between py-[35px] px-[150px] font-poppins bg-black">
+      <div className="fixed inset-x-0 top-0 flex items-center justify-between py-[35px] px-[150px] font-poppins bg-black">
         <div>
           <Image
             src="/Logo VG.png"
