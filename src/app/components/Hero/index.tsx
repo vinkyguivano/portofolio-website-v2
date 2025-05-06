@@ -1,5 +1,6 @@
 import Image from "next/image";
 
+
 const Hero = () => {
   return (
     <div className="pt-[120px] font-poppins">
@@ -21,6 +22,9 @@ const Hero = () => {
         Passionate Software Engineer with a focus on Frontend development,
         dedicated to crafting elegant and user-friendly web applications.
       </div>
+      <button className="mt-9 border-2 border-[#585858] rounded-full py-4 px-12 bg-black hover:bg-gray-900 outline-[#585858] active:outline-1 active:outline-offset-2 cursor-pointer">
+        Contact Me
+      </button>
     </div>
   )
 }
