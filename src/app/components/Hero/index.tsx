@@ -15,7 +15,7 @@ const Hero = () => {
         <div className="font-bold text-6xl">Vinky Guivano!</div>
         <div className="font-semibold text-[#878787] text-3xl mt-2">
           I do Code &
-          <span className="bg-gradient-to-r from-purple-400 via-pink-500 to-orange-400 bg-clip-text text-transparent"> Chill</span>
+          <span className="bg-linear-135 from-purple-400 to-orange-400 bg-clip-text text-transparent"> Chill</span>
         </div>
       </div>
       <div className="mt-[21px] text-base text-[#E1E1E1] max-w-[587px] mx-auto">
