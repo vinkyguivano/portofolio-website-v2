@@ -18,7 +18,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="mt-[21px] text-base text-[#E1E1E1] max-w-[587px] mx-auto">
-        Passionate Software Engineer with a focus on React development,
+        Passionate Software Engineer with a focus on Frontend development,
         dedicated to crafting elegant and user-friendly web applications.
       </div>
     </div>
