@@ -17,7 +17,7 @@ const Hero = () => {
           <span className="bg-gradient-to-r from-purple-400 via-pink-500 to-orange-400 bg-clip-text text-transparent"> Chill</span>
         </div>
       </div>
-      <div className="mt-[21px] text-[16px] text-[#E1E1E1] max-w-[587px] mx-auto">
+      <div className="mt-[21px] text-base text-[#E1E1E1] max-w-[587px] mx-auto">
         Passionate Software Engineer with a focus on React development,
         dedicated to crafting elegant and user-friendly web applications.
       </div>
