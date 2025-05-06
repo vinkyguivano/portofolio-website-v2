@@ -1,9 +1,22 @@
+'use client'
+import { useEffect } from 'react';
 import Image from 'next/image';
 
 const Header = () => {
+  useEffect(() => {
+    const header = document.getElementById('header')
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 100) {
+        header?.classList.add('shadow-md');
+      } else {
+        header?.classList.remove('shadow-md');
+      }
+    })
+  }, [])
+
   return (
     <>
-      <div className="fixed inset-x-0 top-0 flex items-center justify-between py-[35px] px-[150px] font-poppins bg-black">
+      <div id="header" className="fixed inset-x-0 top-0 flex items-center justify-between py-[35px] px-[150px] font-poppins bg-black shadow-gray-900">
         <div>
           <Image
             src="/Logo VG.png"
