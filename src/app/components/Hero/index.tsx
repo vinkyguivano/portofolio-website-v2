@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <div className="pt-[120px]">
+    <div className="pt-[120px] font-poppins">
       <Image 
         src='/vinky-profile.png' 
         alt="Profile Pic" 
@@ -16,6 +16,10 @@ const Hero = () => {
           I do Code &
           <span className="bg-gradient-to-r from-purple-400 via-pink-500 to-orange-400 bg-clip-text text-transparent"> Chill</span>
         </div>
+      </div>
+      <div className="mt-[21px] text-[16px] text-[#E1E1E1] max-w-[587px] mx-auto">
+        Passionate Software Engineer with a focus on React development,
+        dedicated to crafting elegant and user-friendly web applications.
       </div>
     </div>
   )
