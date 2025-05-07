@@ -1,8 +1,19 @@
 'use client'
 import Image from "next/image";
-import { DotLottieReact } from '@lottiefiles/dotlottie-react'
+import { useEffect } from "react";
+import { DotLottie } from '@lottiefiles/dotlottie-web';
+
 
 const Hero = () => {
+  useEffect(() => {
+    new DotLottie({
+      autoplay: true,
+      loop: true,
+      canvas: document.querySelector('#dotlottie-canvas'),
+      src: "https://lottie.host/6978585c-856f-46bb-a5d7-be4f50bffe27/NdaoD5KB77.lottie"
+    })
+  }, [])
+
   return (
     <div className="pt-[120px] font-poppins">
       <Image 
@@ -17,12 +28,7 @@ const Hero = () => {
         <div className="font-semibold text-[#878787] text-3xl mt-2">
           I do Code &
           <span className="bg-linear-135 from-purple-400 to-orange-400 bg-clip-text text-transparent"> Chill</span>
-          <DotLottieReact
-            src="https://lottie.host/6978585c-856f-46bb-a5d7-be4f50bffe27/NdaoD5KB77.lottie"
-            loop
-            autoplay
-            className="w-auto h-[50px] inline-block align-bottom ml-[-10px]"
-          />
+          <canvas id="dotlottie-canvas" className="inline-block w-auto h-[50px] align-text-bottom ml-[-10px]"></canvas>
         </div>
       </div>
       <div className="mt-[21px] text-base text-[#E1E1E1] max-w-[587px] mx-auto">
