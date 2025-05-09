@@ -35,7 +35,7 @@ const Hero = () => {
         Passionate Software Engineer with a focus on Frontend development,
         dedicated to crafting elegant and user-friendly web applications.
       </div>
-      <button className="mt-9 border-2 border-[#585858] rounded-full py-4 px-12 bg-black hover:bg-gray-900 outline-[#585858] active:outline-1 active:outline-offset-2 cursor-pointer">
+      <button className="mt-9 border-2 border-[#585858] rounded-full py-4 px-12 outline-[#585858] cursor-pointer hover:bg-white hover:text-black">
         Contact Me
       </button>
     </div>
