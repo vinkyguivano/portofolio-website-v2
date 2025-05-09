@@ -30,7 +30,9 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${poppins.variable} antialiased`}
       >
-        {children}
+        <div className="bg-[url(/bg-pattern.png)] bg-no-repeat bg-size-[100%]">
+          {children}
+        </div>
       </body>
     </html>
   );
