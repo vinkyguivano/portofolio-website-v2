@@ -1,13 +1,17 @@
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import AboutMe from "./components/About";
+import StarsCanvas from "./components/StarBackground";
 
 export default function Home() {
   return (
-    <div className="mt-28 max-w-[703px] mx-auto text-center">
+    <>
+      <StarsCanvas />
       <Header />
-      <Hero />
-      <AboutMe />
-    </div>
+      <div className="relative mt-28 max-w-[703px] mx-auto text-center z-[2]">
+        <Hero />
+        <AboutMe />
+      </div>
+    </>
   );
 }
