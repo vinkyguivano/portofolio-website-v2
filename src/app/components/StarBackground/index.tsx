@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useRef, Suspense } from "react";
-import { Canvas, useFrame } from "@react-three/fiber";
+import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { Points, PointMaterial } from "@react-three/drei";
 // @ts-ignore
 import * as random from "maath/random/dist/maath-random.esm";
@@ -13,8 +13,8 @@ const StarBackground = (props: any) => {
   );
 
   useFrame((state, delta) => {
-    ref.current.rotation.x -= delta / 10;
-    ref.current.rotation.y -= delta / 15;
+    ref.current.rotation.x -= delta / 20;
+    ref.current.rotation.y -= delta / 30;
   });
 
   return (
@@ -32,10 +32,21 @@ const StarBackground = (props: any) => {
   );
 };
 
+const ParallaxEffect = () => {
+  const { camera, mouse } = useThree();
+  useFrame(() => {
+    camera.position.x += (mouse.x * 0.5 - camera.position.x) * 0.05;
+    camera.position.y += (mouse.y * 0.5 - camera.position.y) * 0.05;
+    camera.lookAt(0, 0, 0);
+  });
+  return null;
+};
+
 const StarsCanvas: React.FC<{}> = () => (
   <div className="w-full h-auto fixed inset-0 z-[1] ">
     <Canvas camera={{ position: [0, 0, 1] }}>
       <Suspense fallback={null}>
+        <ParallaxEffect />
         <StarBackground />
       </Suspense>
     </Canvas>
