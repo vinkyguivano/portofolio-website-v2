@@ -9,7 +9,7 @@ const AboutMe = () => {
         <br/>
         <br/>
         Outside of coding, I&apos;m passionate about playing football and hitting the gym. Staying active helps me stay focused, energized, and always ready to tackle
-        the next challenge, wheter on the field or in code. 
+        the next challenge, whether on the field or in code. 
       </div>
     </div>
   )
