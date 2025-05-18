@@ -3,6 +3,7 @@
 :root {
   --background: #111;
   --foreground: #fff;
+  --gray-300: #e1e1e1;
 }
 
 @theme inline {
@@ -10,6 +11,8 @@
   --color-foreground: var(--foreground);
   --font-inter: var(--font-inter);
   --font-poppins: var(--font-poppins);
+
+  --color-gray-300: var(--gray-300)
 }
 
 /* @media (prefers-color-scheme: dark) {
