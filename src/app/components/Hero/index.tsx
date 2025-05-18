@@ -15,7 +15,7 @@ const Hero = () => {
   }, [])
 
   return (
-    <div className="pt-[120px] font-poppins">
+    <section id="hero" className="pt-[120px] font-poppins">
       <Image 
         src='/vinky-profile.png' 
         alt="Profile Pic" 
@@ -38,7 +38,7 @@ const Hero = () => {
       <button className="mt-9 border-2 border-[#585858] rounded-full py-4 px-12 outline-[#585858] cursor-pointer hover:bg-white hover:text-black">
         Contact Me
       </button>
-    </div>
+    </section>
   )
 }
 
