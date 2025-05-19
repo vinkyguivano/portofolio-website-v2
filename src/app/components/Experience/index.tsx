@@ -8,12 +8,15 @@ const Experience = () => {
       position: 'Web Software Engineer',
       monthOfJoined: 'September 22 - Present, Jakarta',
       content: `
-        Currently, I am working on WebHR Mobile Application, WebHR is a Cloud based Social HR Software for SMEs by Verge Systems Inc. WebHR is currently used in over 160 countries world wide by thousands of organizations to manage HR, As a React.js developer with 1.5 year of experience, I have a strong foundation in creating dynamic and responsive mobile and web applications.
+        Currently, I'm working at DANA Indonesia, where I develop the DANA Merchant Portal, a web-based platform that enables enterprises and merchants to register and integrate with DANA's payment solutions. 
+        As a Web Software Engineer, I'm responsible for both building and maintaining the front-end of the application.
         <br/>
         <br/>
-        My experience with React Native has allowed me to develop cross-platform mobile applications that run seamlessly on both iOS and Android platforms. Additionally, my proficiency in React.js has equipped me with the skills to create fast, scalable, and dynamic web pages with excellent user experiences. I have a deep understanding of component-based architecture and state management, and I am well-versed in the latest web development trends and technologies.
+        My proficiency in React.js allows me to create fast, reliable, and dynamic web interfaces. 
+        I work closely with a design system and focus on building responsive user interfaces to ensure a consistent and seamless user experience across devices. 
+        This role has given me valuable insights into best practices from both business and technology perspectives, helping me grow into a more well-rounded and effective software engineer.
       `,
-      tags: ['ReactJS', 'VueJS', 'JavaScript', 'ANTD']
+      tags: ['ReactJS', 'VueJS', 'JavaScript', 'CSS']
     },
     {
       logo: 'adira-logo.png',
@@ -21,10 +24,7 @@ const Experience = () => {
       position: 'Application Developern Intern',
       monthOfJoined: 'February 21 - February-22, Jakarta',
       content: `
-        Currently, I am working on WebHR Mobile Application, WebHR is a Cloud based Social HR Software for SMEs by Verge Systems Inc. WebHR is currently used in over 160 countries world wide by thousands of organizations to manage HR, As a React.js developer with 1.5 year of experience, I have a strong foundation in creating dynamic and responsive mobile and web applications.
-        <br/>
-        <br/>
-        My experience with React Native has allowed me to develop cross-platform mobile applications that run seamlessly on both iOS and Android platforms. Additionally, my proficiency in React.js has equipped me with the skills to create fast, scalable, and dynamic web pages with excellent user experiences. I have a deep understanding of component-based architecture and state management, and I am well-versed in the latest web development trends and technologies.
+        My role at Adira Finance was a Application Developer Intern. 
       `,
       tags: ['ReactJS', 'React Native', 'NodeJS', 'Java']
     }
