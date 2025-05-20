@@ -8,7 +8,7 @@ const Experience = () => {
       position: 'Web Software Engineer',
       monthOfJoined: 'September 22 - Present, Jakarta',
       content: `
-        Currently, I'm working at DANA Indonesia, where I develop the DANA Merchant Portal, a web-based platform that enables enterprises and merchants to register and integrate with DANA's payment solutions. 
+        Currently, I'm working at DANA Indonesia, where I work on <b>DANA Merchant Portal</b>, a web-based platform that enables enterprises and merchants to register and integrate with DANA's payment solutions. 
         As a Web Software Engineer, I'm responsible for both building and maintaining the front-end of the application.
         <br/>
         <br/>
@@ -16,7 +16,7 @@ const Experience = () => {
         I work closely with a design system and focus on building responsive user interfaces to ensure a consistent and seamless user experience across devices. 
         This role has given me valuable insights into best practices from both business and technology perspectives, helping me grow into a more well-rounded and effective software engineer.
       `,
-      tags: ['ReactJS', 'VueJS', 'JavaScript', 'CSS']
+      tags: ['React.js', 'Vue.js', 'JavaScript', 'CSS']
     },
     {
       logo: 'adira-logo.png',
@@ -24,9 +24,15 @@ const Experience = () => {
       position: 'Application Developern Intern',
       monthOfJoined: 'February 21 - February-22, Jakarta',
       content: `
-        My role at Adira Finance was a Application Developer Intern. 
+        In 2021, I completed an internship at Adira Finance, where I worked on <b>Moservice.id</b>, a web-based platform that enables users across Indonesia to schedule car service appointments and claim promotional vouchers. 
+        As an Application Developer, I was responsible for developing both the front-end and back-end of the application.
+        <br />
+        <br />
+        I created robust, responsive, and dynamic features by applying my skills and knowledge. 
+        I primarily used React for building the user interface and Java for developing web APIs. 
+        This role gave me a valuable opportunity to explore modern technologies and understand how products are built and maintained in a real business industry. It was a crucial step that helped me kick-start my career in software engineering.
       `,
-      tags: ['ReactJS', 'React Native', 'NodeJS', 'Java']
+      tags: ['React.js', 'React Native', 'Node.js', 'Java']
     }
   ] 
 
