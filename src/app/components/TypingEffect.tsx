@@ -14,10 +14,10 @@ export default function TypingEffect({ children: fullText }: IProps) {
     let typingSpeed
     let updatedtext
     if (isDeleting) {
-      typingSpeed = 70
+      typingSpeed = 50
       updatedtext = text.slice(0, -1)
     } else {
-      typingSpeed = 140
+      typingSpeed = 120
       updatedtext = fullText.slice(0, text.length + 1)
     }
 
