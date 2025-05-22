@@ -35,7 +35,12 @@ const Hero = () => {
         Passionate Software Engineer with a focus on Frontend development,
         dedicated to crafting elegant and user-friendly web applications.
       </div>
-      <button className="mt-9 border-2 border-[#585858] rounded-full py-4 px-12 outline-[#585858] cursor-pointer hover:bg-white hover:text-black">
+      <button 
+        className="mt-9 border-2 border-[#585858] rounded-full py-4 px-12 outline-[#585858] cursor-pointer hover:bg-white hover:text-black"
+        onClick={() => {
+          location.href = "mailto:vinkyguivano@gmail.com"
+        }}
+      >
         Contact Me
       </button>
     </section>
