@@ -22,12 +22,12 @@ export default function TypingEffect({ children: fullText }: IProps) {
     }
 
     const timeout = setTimeout(() => {
+      setText(updatedtext)
       if (!isDeleting && updatedtext === fullText) {
         setTimeout(() => setIsDeleting(true), 5000); // pause before delete
       } else if (isDeleting && updatedtext === '') {
         setIsDeleting(false);
       }
-      setText(updatedtext)
     }, typingSpeed);
 
     return () => clearTimeout(timeout);
