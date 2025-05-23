@@ -16,7 +16,7 @@ const Footer = () => {
         </Link>
       </div>
       <div className="mt-7 text-center text-gray-300 text-xs"> 
-        Made with full of &#x2665;&#xfe0f;. Built with Next.js and Tailwind CSS
+        Made with care and &#x2665;&#xfe0f; using Next.js and Tailwind CSS
         <br />
         Design inspired by Ibrahim Memon – all credit to him!
       </div>
