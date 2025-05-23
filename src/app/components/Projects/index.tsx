@@ -27,7 +27,7 @@ const Projects = () => {
       thumbnail: "/logo-homelize-1.png",
       title: "Homelize",
       description: "Developed the Homelize, an application for booking the house interior designer",
-      link: '',
+      link: 'https://github.com/vinkyguivano/Homelize-React-native',
     },
   ] 
 
