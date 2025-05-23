@@ -12,22 +12,22 @@ const Projects = () => {
   
   const projects = [
     {
-      thumbnail: "/next.svg",
+      thumbnail: "/logo-dana-blue.png",
       title: "Merchant Portal",
-      description: "Designed a modern UI website comprising more than 50 screens, along with the integration of a blog using Next.js.",
+      description: "Developed the onboarding features of DANA Merchant Portal project",
       link: "https://dashboard.dana.id/app/"
     },
     {
-      thumbnail: "/next.svg",
+      thumbnail: "/logo-moservice.webp",
       title: "Moservice.id",
-      description: "Designed a modern UI website comprising more than 50 screens, along with the integration of a blog using Next.js.",
+      description: "Developed the Moservice.id blogs along with the integration of WordPress CMS API",
       link: "https://moservice.id/",
     },
     {
-      thumbnail: "/next.svg",
+      thumbnail: "/logo-homelize-1.png",
       title: "Homelize",
-      description: "Designed a modern UI website comprising more than 50 screens, along with the integration of a blog using Next.js.",
-      link: "",
+      description: "Developed the Homelize, an application for booking the house interior designer",
+      link: '',
     },
   ] 
 
@@ -50,15 +50,14 @@ const Projects = () => {
             }
           }}>
             <div className="flex items-center gap-3.5">
-              <Image
-                alt="project thumbnail"
-                src={p.thumbnail}
-                width={150}
-                height={95}
-                objectFit="contain"
-                objectPosition="center"
-                className="bg-white rounded-lg overflow-hidden shrink-0 w-[150px] h-[95px]"
-              />
+              <div className="w-[150px] h-[95px] bg-white rounded-lg overflow-hidden shrink-0 flex justify-center items-center">
+                <Image
+                  alt="project thumbnail"
+                  src={p.thumbnail}
+                  width={90}
+                  height={60}
+                />
+              </div>
               <div>
                 <div className="font-extrabold text-lg">{p.title}</div>
                 <div className="font-medium text-[8px] text-[#878787]">{p.description}</div>
