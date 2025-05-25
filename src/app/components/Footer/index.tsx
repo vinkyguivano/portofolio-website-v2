@@ -1,7 +1,11 @@
+"use client"
 import Image from "next/image";
 import Link from "next/link";
 
+import { useLanguage, ILanguage } from "@/app/context/LanguageContext";
+
 const Footer = () => {
+  const { t } = useLanguage() as ILanguage
   return (
     <div className="mt-52 mb-32 max-w-[455px] mx-auto">
       <div className="flex items-center justify-center gap-8">
@@ -16,9 +20,9 @@ const Footer = () => {
         </Link>
       </div>
       <div className="mt-7 text-center text-gray-300 text-xs"> 
-        Made with care and &#x2665;&#xfe0f; using Next.js and Tailwind CSS
+        {t('footer.description.1')}
         <br />
-        Design inspired by Ibrahim Memon – all credit to him!
+        {t('footer.description.2')}
       </div>
     </div>
   )

@@ -46,6 +46,11 @@ const textEn = {
   "projects.3.desc":
     "Developed the Homelize, an application for booking the house interior designer",
 
+  "footer.description.1":
+    "Made with care and ♥️ using Next.js and Tailwind CSS",
+  "footer.description.2":
+    "Design inspired by Ibrahim Memon – all credit to him!",
+
   "explore.now": "EXPLORE NOW",
 };
 
@@ -96,6 +101,11 @@ const textId = {
     "Mengerjakan fitur blog Moservice.id beserta integrasi API CMS WordPress",
   "projects.3.desc":
     "Mengembangkan Homelize, aplikasi untuk menyewa desainer interior rumah",
+
+  "footer.description.1":
+    "Dibuat dengan perhatian and ♥️ menggunakan Next.js dan Tailwind CSS",
+  "footer.description.2":
+    "Desain terinspirasi oleh Ibrahim Memon – semua kredit untuknya!",
 
   "explore.now": "EKSPLOR SEKARANG",
 };
