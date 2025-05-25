@@ -3,30 +3,32 @@
 import Image from "next/image"
 import Link from "next/link"
 import { useState } from "react"
+import { useLanguage, ILanguage } from "@/app/context/LanguageContext"
 
 import ErrorToast from "../Toast"
 
 const Projects = () => {
   const [toastVisible, setToastVisible] = useState(false);
   const [errorMsg, setErrorMsg] = useState('');
+  const { t } = useLanguage() as ILanguage
   
   const projects = [
     {
       thumbnail: "/logo-dana-blue.png",
       title: "Merchant Portal",
-      description: "Developed the onboarding features of DANA Merchant Portal project",
+      description: t('projects.1.desc'),
       link: "https://dashboard.dana.id/app/"
     },
     {
       thumbnail: "/logo-moservice.webp",
       title: "Moservice.id",
-      description: "Developed the Moservice.id blogs along with the integration of WordPress CMS API",
+      description: t('projects.2.desc'),
       link: "https://moservice.id/",
     },
     {
       thumbnail: "/logo-homelize-1.png",
       title: "Homelize",
-      description: "Developed the Homelize, an application for booking the house interior designer",
+      description: t('projects.3.desc'),
       link: 'https://github.com/vinkyguivano/Homelize-React-native',
     },
   ] 
@@ -38,8 +40,8 @@ const Projects = () => {
         visible={toastVisible}
         onClose={() => setToastVisible(false)} 
       />
-      <div className="font-extrabold text-5xl">PROJECTS</div>
-      <div className="font-medium text-sm bg-[linear-gradient(to_right,_var(--color-purple-400)_20%,_var(--color-orange-400)_100%)] bg-clip-text text-transparent tracking-[7px]">EXPLORE NOW</div>
+      <div className="font-extrabold text-5xl">{t('projects')}</div>
+      <div className="font-medium text-sm bg-[linear-gradient(to_right,_var(--color-purple-400)_20%,_var(--color-orange-400)_100%)] bg-clip-text text-transparent tracking-[7px]">{t('explore.now')}</div>
       <div className="mt-14 grid grid-cols-2 gap-6 text-left">
         {projects.map((p, i) => (
           <Link href={p.link} key={i} target="_blank" onClick={(e) => {

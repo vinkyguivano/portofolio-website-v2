@@ -38,6 +38,14 @@ const textEn = {
     It was a crucial step that helped me kick-start my career in software engineering.
   `,
 
+  projects: "PROJECTS",
+  "projects.1.desc":
+    "Developed the onboarding features of DANA Merchant Portal project",
+  "projects.2.desc":
+    "Developed the Moservice.id blogs along with the integration of WordPress CMS API",
+  "projects.3.desc":
+    "Developed the Homelize, an application for booking the house interior designer",
+
   "explore.now": "EXPLORE NOW",
 };
 
@@ -80,6 +88,14 @@ const textId = {
     Peran ini memberikan saya kesempatan berharga untuk mengeksplorasi teknologi modern dan memahami bagaimana sebuah produk dibangun dan dikelola dalam industri bisnis nyata.
     Ini merupakan langkah penting yang membantu saya memulai karier di bidang software engineering.
   `,
+
+  projects: "PROJEK",
+  "projects.1.desc":
+    "Mengerjakan fitur onboarding pada projek Merchant Portal DANA",
+  "projects.2.desc":
+    "Mengerjakan fitur blog Moservice.id beserta integrasi API CMS WordPress",
+  "projects.3.desc":
+    "Mengembangkan Homelize, aplikasi untuk menyewa desainer interior rumah",
 
   "explore.now": "EKSPLOR SEKARANG",
 };
