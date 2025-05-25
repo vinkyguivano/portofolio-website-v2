@@ -17,7 +17,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "Vinky Guivano",
-  description: "Personal Website by Vinky Guivano",
+  description: "Portofolio Website - Vinky Guivano",
   icons: "/laptop.png"
 };
 
