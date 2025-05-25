@@ -10,7 +10,7 @@ export const LanguageProvider = ({ children }: { children: React.ReactNode}) => 
 
   const toggleLanguage = useCallback(() => {
     setLanguage(prev => (prev === "EN" ? "ID" : "EN"));
-    document.querySelector("body")?.scrollIntoView({ behavior: 'smooth' })
+    document.querySelector("html")?.scrollIntoView({ behavior: 'smooth' })
   }, [])
 
   const t = useCallback((key: string) => {
