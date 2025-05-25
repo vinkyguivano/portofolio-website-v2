@@ -30,9 +30,13 @@ const Hero = () => {
       />
       <div className="mt-9 font-poppins">
         <div className="font-bold text-6xl">
-          <TypingEffect>
-            {t('hero.name')}
-          </TypingEffect>
+          <TypingEffect
+            texts={[
+              t('hero.name.0'),
+              t('hero.name.1'),
+              t('hero.name.2'),
+            ]} 
+          />
         </div>
         <div className="font-semibold text-[#878787] text-3xl mt-2">
           {t('hero.title.code')}

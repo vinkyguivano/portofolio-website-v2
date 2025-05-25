@@ -1,5 +1,7 @@
 const textEn = {
-  "hero.name": "VINKY GUIVANO!",
+  "hero.name.0": "WELCOME",
+  "hero.name.1": "MY NAME IS",
+  "hero.name.2": "VINKY GUIVANO!",
   "hero.title.code": "I do Code &",
   "hero.title.chill": "Chill",
   "hero.description":
@@ -55,7 +57,9 @@ const textEn = {
 };
 
 const textId = {
-  "hero.name": "VINKY GUIVANO!",
+  "hero.name.0": "SELAMAT DATANG",
+  "hero.name.1": "NAMA SAYA",
+  "hero.name.2": "VINKY GUIVANO!",
   "hero.title.code": "Saya melakukan Kode &",
   "hero.title.chill": "Bersantai",
   "hero.description":

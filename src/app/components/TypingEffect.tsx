@@ -2,12 +2,13 @@
 import { useEffect, useState } from 'react';
 
 interface IProps {
-  children: string
+  texts: Array<string>
 }
 
 
-export default function TypingEffect({ children: fullText }: IProps) {
-  const [text, setText] = useState('');
+export default function TypingEffect({ texts }: IProps) {
+  const [idx, setIdx] = useState(0);
+  const [currText, setCurrText] = useState('');
   const [isDeleting, setIsDeleting] = useState(false);
 
   useEffect(() => {
@@ -15,27 +16,30 @@ export default function TypingEffect({ children: fullText }: IProps) {
     let updatedtext
     if (isDeleting) {
       typingSpeed = 50
-      updatedtext = text.slice(0, -1)
+      updatedtext = currText.slice(0, -1)
     } else {
       typingSpeed = 120
-      updatedtext = fullText.slice(0, text.length + 1)
+      updatedtext = texts[idx].slice(0, currText.length + 1)
     }
 
     const timeout = setTimeout(() => {
-      setText(updatedtext)
-      if (!isDeleting && updatedtext === fullText) {
-        setTimeout(() => setIsDeleting(true), 5000); // pause before delete
+      setCurrText(updatedtext)
+      if (!isDeleting && updatedtext === texts[idx]) {
+        const timeoutMs = (idx === texts.length - 1) ? 8000 : 2000;
+        setTimeout(() => setIsDeleting(true), timeoutMs); // pause before delete
       } else if (isDeleting && updatedtext === '') {
+        const newIdx = (idx + 1) % texts.length;
+        setIdx(newIdx)
         setIsDeleting(false);
       }
     }, typingSpeed);
 
     return () => clearTimeout(timeout);
-  }, [text, isDeleting]);
+  }, [currText, isDeleting, idx]);
 
   return (
     <div>
-      {text}
+      {currText}
       <span className="animate-blink">|</span>
     </div>
   );
