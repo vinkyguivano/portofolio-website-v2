@@ -1,5 +1,7 @@
 import Image from 'next/image';
 
+import LanguageToggle from '../LanguageSwitcher';
+
 const Header = () => {
   return (
     <>
@@ -13,13 +15,8 @@ const Header = () => {
               height={40}
             />
           </div>
-          <div className="grid grid-cols-2 gap-[10px]">
-            <button className="border-2 border-gray-600 rounded-xl py-2 px-3.5 font-medium text-[13px] text-[#E1E1E1] cursor-pointer">
-              About Me
-            </button>
-            <button className="bg-white rounded-xl py-2 px-3.5 font-medium text-[13px] text-black cursor-pointer">
-              Contact
-            </button>
+          <div className="grid">
+            <LanguageToggle />
           </div> 
         </div>
       </div>
