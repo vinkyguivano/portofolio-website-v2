@@ -6,9 +6,11 @@ import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 
+import { LanguageProvider } from "./context/LanguageContext";
+
 export default function Home() {
   return (
-    <>
+    <LanguageProvider>
       <StarsCanvas />
       <Header />
       <div className="relative mt-28 max-w-[703px] mx-auto text-center z-[2]">
@@ -18,6 +20,6 @@ export default function Home() {
         <Projects />
         <Footer />
       </div>
-    </>
+    </LanguageProvider>
   );
 }

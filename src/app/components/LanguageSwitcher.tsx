@@ -1,16 +1,10 @@
 'use client'
 
-import { useState } from "react";
+import { useLanguage, ILanguage } from "../context/LanguageContext";
 
-const DEFAULT_LANGUAGE = "EN";
 
 export default function LanguageToggle() {
-  const [language, setLanguage] = useState(DEFAULT_LANGUAGE);
-
-  const toggleLanguage = () => {
-    setLanguage(prev => (prev === "EN" ? "ID" : "EN"));
-  };
-
+  const { language, toggleLanguage } = useLanguage() as ILanguage;
   const isEnglish = language === 'EN';
 
   return (
