@@ -3,9 +3,13 @@ import Image from "next/image";
 import { useEffect } from "react";
 import { DotLottie } from '@lottiefiles/dotlottie-web';
 
+import { useLanguage, ILanguage } from "@/app/context/LanguageContext";
+
 import TypingEffect from "../TypingEffect";
 
 const Hero = () => {
+  const { t } = useLanguage() as ILanguage
+
   useEffect(() => {
     new DotLottie({
       autoplay: true,
@@ -27,18 +31,17 @@ const Hero = () => {
       <div className="mt-9 font-poppins">
         <div className="font-bold text-6xl">
           <TypingEffect>
-            VINKY GUIVANO!
+            {t('hero.name')}
           </TypingEffect>
         </div>
         <div className="font-semibold text-[#878787] text-3xl mt-2">
-          I do Code &
-          <span className="bg-linear-135 from-purple-400 to-orange-400 bg-clip-text text-transparent"> Chill</span>
+          {t('hero.title.code')}
+          <span className="bg-linear-135 from-purple-400 to-orange-400 bg-clip-text text-transparent">{' '}{t('hero.title.chill')}</span>
           <canvas id="dotlottie-canvas" className="inline-block w-auto h-[50px] align-text-bottom ml-[-10px]"></canvas>
         </div>
       </div>
       <div className="mt-[21px] text-base text-[#E1E1E1] max-w-[587px] mx-auto">
-        Passionate Software Engineer with a focus on Frontend development,
-        dedicated to crafting elegant and user-friendly web applications.
+        {t('hero.description')}
       </div>
       <button 
         className="mt-9 border-2 border-[#585858] rounded-full py-4 px-12 outline-[#585858] cursor-pointer hover:bg-white hover:text-black"
@@ -46,7 +49,7 @@ const Hero = () => {
           location.href = "mailto:vinkyguivano@gmail.com"
         }}
       >
-        Contact Me
+        {t('hero.contact.me')}
       </button>
     </section>
   )
