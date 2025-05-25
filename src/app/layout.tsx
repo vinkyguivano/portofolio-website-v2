@@ -18,6 +18,7 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Vinky Guivano",
   description: "Personal Website by Vinky Guivano",
+  icons: "/laptop.png"
 };
 
 export default function RootLayout({
