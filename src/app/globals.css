@@ -12,7 +12,9 @@
   --font-inter: var(--font-inter);
   --font-poppins: var(--font-poppins);
 
-  --color-gray-300: var(--gray-300)
+  --color-gray-300: var(--gray-300);
+
+  --breakpoint-xs: 30rem;
 }
 
 @layer utilities {
