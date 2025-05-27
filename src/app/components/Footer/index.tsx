@@ -19,7 +19,7 @@ const Footer = () => {
           <Image src={"/social-icon/linked-in.svg"}  alt="linkedin" width={25} height={25}/>
         </Link>
       </div>
-      <div className="mt-7 text-center text-gray-300 text-xs max-xs:text-[10px]"> 
+      <div className="mt-7 text-center text-gray-300 text-xs max-xs:text-[8px]"> 
         {t('footer.description.1')}
         <br />
         {t('footer.description.2')}
