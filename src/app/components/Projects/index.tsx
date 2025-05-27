@@ -52,7 +52,7 @@ const Projects = () => {
             }
           }}>
             <div className="flex items-center gap-3.5">
-              <div className="w-[150px] h-[95px] bg-white rounded-lg overflow-hidden shrink-0 flex justify-center items-center">
+              <div className="w-[150px] h-[95px] bg-white rounded-lg overflow-hidden shrink-0 flex justify-center items-center max-xs:w-[140px] max-xs:h-[85px]">
                 <Image
                   alt="project thumbnail"
                   src={p.thumbnail}

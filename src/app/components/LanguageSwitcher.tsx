@@ -9,7 +9,7 @@ export default function LanguageToggle() {
 
   return (
     <div className="flex items-center space-x-2">
-      <span className="font-semibold text-sm text-gray-300">EN</span>
+      <span className="font-semibold text-sm text-gray-300 max-xs:hidden">EN</span>
       <div
         className="w-[76px] h-10 border-2 border-[#585858] rounded-full flex items-center px-1 cursor-pointer transition-all duration-300 relative"
         onClick={toggleLanguage}
@@ -26,7 +26,7 @@ export default function LanguageToggle() {
           />
         </div>
       </div>
-      <span className="font-semibold text-sm text-gray-300">ID</span>
+      <span className="font-semibold text-sm text-gray-300 max-xs:hidden">ID</span>
     </div>
   );
 }

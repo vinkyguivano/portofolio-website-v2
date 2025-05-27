@@ -5,7 +5,7 @@ import LanguageToggle from '../LanguageSwitcher';
 const Header = () => {
   return (
     <>
-      <div id="header" className="fixed font-poppins top-0 inset-x-0 h-[80px] px-15 backdrop-blur-sm z-10 max-md:px-11">
+      <div id="header" className="fixed font-poppins top-0 inset-x-0 h-[80px] px-15 backdrop-blur-sm z-10 max-md:px-11 max-xs:px-7">
         <div className='flex items-center justify-between w-full h-full'>
           <div>
             <Image

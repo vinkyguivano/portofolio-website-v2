@@ -29,7 +29,7 @@ const Hero = () => {
         className="rounded-full bg-[#1A1A1A] mx-auto w-60 h-60 object-center object-contain"
       />
       <div className="mt-9 font-poppins">
-        <div className="font-bold text-6xl">
+        <div className="font-bold text-6xl max-xs:text-5xl">
           <TypingEffect
             texts={[
               t('hero.name.0'),
@@ -38,13 +38,13 @@ const Hero = () => {
             ]} 
           />
         </div>
-        <div className="font-semibold text-[#878787] text-3xl mt-2 max-sm:max-w-[500px] max-sm:mx-auto">
+        <div className="font-semibold text-[#878787] text-3xl mt-2 max-sm:max-w-[500px] max-sm:mx-auto max-xs:max-w-[400px] max-xs:text-2xl">
           {t('hero.title.code')}
           <span className="bg-linear-135 from-purple-400 to-orange-400 bg-clip-text text-transparent">{' '}{t('hero.title.chill')}</span>
           <canvas id="dotlottie-canvas" className="inline-block w-auto h-[50px] align-text-bottom ml-[-10px]"></canvas>
         </div>
       </div>
-      <div className="mt-[21px] text-base text-[#E1E1E1] max-w-[587px] mx-auto">
+      <div className="mt-[21px] text-base text-[#E1E1E1] max-w-[587px] mx-auto max-xs:text-sm">
         {t('hero.description')}
       </div>
       <button 

@@ -13,7 +13,7 @@ export default function Home() {
     <LanguageProvider>
       <StarsCanvas />
       <Header />
-      <div className="relative mt-28 max-w-[703px] mx-auto text-center z-[2] max-md:max-w-full max-md:px-11">
+      <div className="relative mt-28 max-w-[703px] mx-auto text-center z-[2] max-md:max-w-full max-md:px-11 max-xs:px-7">
         <Hero />
         <AboutMe />
         <Experience />
