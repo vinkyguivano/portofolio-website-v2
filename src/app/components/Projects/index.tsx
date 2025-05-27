@@ -40,7 +40,7 @@ const Projects = () => {
         visible={toastVisible}
         onClose={() => setToastVisible(false)} 
       />
-      <div className="font-extrabold text-5xl">{t('projects')}</div>
+      <div className="font-extrabold text-5xl max-sm:text-4xl">{t('projects')}</div>
       <div className="font-medium text-sm bg-[linear-gradient(to_right,_var(--color-purple-400)_20%,_var(--color-orange-400)_100%)] bg-clip-text text-transparent tracking-[7px]">{t('explore.now')}</div>
       <div className="mt-14 grid grid-cols-2 gap-6 text-left max-sm:grid-cols-1">
         {projects.map((p, i) => (

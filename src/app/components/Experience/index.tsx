@@ -25,7 +25,7 @@ const Experience = () => {
 
   return (
     <section id="about" className="mt-[105px] font-inter">
-      <div className="font-extrabold text-5xl">{t('experience')}</div>
+      <div className="font-extrabold text-5xl max-sm:text-4xl">{t('experience')}</div>
       <div className="font-medium text-sm bg-[linear-gradient(to_right,_var(--color-purple-400)_20%,_var(--color-orange-400)_100%)] bg-clip-text text-transparent tracking-[7px]">{t('explore.now')}</div>
       {experiences.map((exp, i) => (
         <div className="mt-14 text-left max-xs:text-sm" key={i}>
@@ -39,7 +39,7 @@ const Experience = () => {
                   height={40}
                 />
               </div>
-              <div className="text-lg">
+              <div className="text-lg max-sm:text-base">
                 <b>{exp.company}</b> 
                 <div>{exp.position}</div>
               </div>
