@@ -38,7 +38,7 @@ const Hero = () => {
             ]} 
           />
         </div>
-        <div className="font-semibold text-[#878787] text-3xl mt-2">
+        <div className="font-semibold text-[#878787] text-3xl mt-2 max-sm:max-w-[500px] max-sm:mx-auto">
           {t('hero.title.code')}
           <span className="bg-linear-135 from-purple-400 to-orange-400 bg-clip-text text-transparent">{' '}{t('hero.title.chill')}</span>
           <canvas id="dotlottie-canvas" className="inline-block w-auto h-[50px] align-text-bottom ml-[-10px]"></canvas>

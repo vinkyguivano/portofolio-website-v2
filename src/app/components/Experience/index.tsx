@@ -29,7 +29,7 @@ const Experience = () => {
       <div className="font-medium text-sm bg-[linear-gradient(to_right,_var(--color-purple-400)_20%,_var(--color-orange-400)_100%)] bg-clip-text text-transparent tracking-[7px]">{t('explore.now')}</div>
       {experiences.map((exp, i) => (
         <div className="mt-14 text-left" key={i}>
-          <div className="flex items-center justify-between gap-2.5">
+          <div className="flex items-center justify-between gap-2.5 max-sm:flex-col max-sm:items-start">
             <div className="flex items-center gap-2.5">
               <div className="rounded-full overflow-hidden bg-background">
                 <Image 

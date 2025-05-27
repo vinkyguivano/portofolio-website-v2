@@ -38,10 +38,15 @@ export default function TypingEffect({ texts }: IProps) {
   }, [currText, isDeleting, idx]);
 
   return (
-    <div>
-      {currText}
-      <span className="animate-blink">|</span>
-    </div>
+    <>
+      <div className='max-sm:hidden'>
+        {currText}
+        <span className="animate-blink">|</span>
+      </div>
+      <div className='hidden max-sm:block'>
+        {texts.slice(-1)}
+      </div>
+    </>
   );
 }
 
