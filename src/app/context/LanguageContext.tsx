@@ -14,7 +14,8 @@ export const LanguageProvider = ({ children }: { children: React.ReactNode}) => 
   }, [])
 
   const t = useCallback((key: string) => {
-    return locales[language][key] || key;
+    const lang = locales[language as keyof typeof locales]
+    return lang[key as keyof typeof lang] || key;
   }, [language])
 
   return (

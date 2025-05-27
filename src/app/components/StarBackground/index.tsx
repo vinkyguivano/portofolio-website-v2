@@ -3,11 +3,13 @@
 import React, { useState, useRef, Suspense } from "react";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { Points, PointMaterial } from "@react-three/drei";
-// @ts-ignore
-import * as random from "maath/random/dist/maath-random.esm";
 
+import * as random from "maath/random";
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const StarBackground = (props: any) => {
-  const ref: any = useRef();
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const ref: any = useRef(null);
   const [sphere] = useState(() =>
     random.inSphere(new Float32Array(5000), { radius: 1.2 })
   );
@@ -32,6 +34,7 @@ const StarBackground = (props: any) => {
   );
 };
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const ParallaxEffect = () => {
   const { camera, mouse } = useThree();
   useFrame(() => {
@@ -42,6 +45,7 @@ const ParallaxEffect = () => {
   return null;
 };
 
+// eslint-disable-next-line @typescript-eslint/no-empty-object-type
 const StarsCanvas: React.FC<{}> = () => (
   <div className="w-full h-auto fixed inset-0 z-[1] ">
     <Canvas camera={{ position: [0, 0, 1] }}>

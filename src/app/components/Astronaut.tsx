@@ -8,7 +8,7 @@ const Astronaut = () => {
     new DotLottie({
       autoplay: true,
       loop: true,
-      canvas: document.querySelector('#astronaut-canvas'),
+      canvas: document.querySelector('#astronaut-canvas') as HTMLCanvasElement,
       src: "https://lottie.host/a7801968-f5b8-4c01-aec5-29b7aaa73efc/EfJIQ8YRCW.lottie",
     })
   }, [])

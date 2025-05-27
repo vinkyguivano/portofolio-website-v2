@@ -14,7 +14,7 @@ const Hero = () => {
     new DotLottie({
       autoplay: true,
       loop: true,
-      canvas: document.querySelector('#dotlottie-canvas'),
+      canvas: document.querySelector('#dotlottie-canvas') as HTMLCanvasElement,
       src: "https://lottie.host/6978585c-856f-46bb-a5d7-be4f50bffe27/NdaoD5KB77.lottie"
     })
   }, [])
