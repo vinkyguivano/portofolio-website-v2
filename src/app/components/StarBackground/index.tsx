@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useRef, Suspense } from "react";
-import { Canvas, useFrame, useThree } from "@react-three/fiber";
+import { Canvas, useFrame } from "@react-three/fiber";
 import { Points, PointMaterial } from "@react-three/drei";
 
 import * as random from "maath/random";
@@ -32,17 +32,6 @@ const StarBackground = (props: any) => {
       </Points>
     </group>
   );
-};
-
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-const ParallaxEffect = () => {
-  const { camera, mouse } = useThree();
-  useFrame(() => {
-    camera.position.x += (mouse.x * 0.5 - camera.position.x) * 0.05;
-    camera.position.y += (mouse.y * 0.5 - camera.position.y) * 0.05;
-    camera.lookAt(0, 0, 0);
-  });
-  return null;
 };
 
 // eslint-disable-next-line @typescript-eslint/no-empty-object-type
