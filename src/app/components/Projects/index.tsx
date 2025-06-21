@@ -14,6 +14,12 @@ const Projects = () => {
   
   const projects = [
     {
+      thumbnail: "/logo-api.svg",
+      title: "API Docs",
+      description: t('projects.4.desc'),
+      link: "https://dashboard.dana.id/api-docs-v2/"
+    },
+    {
       thumbnail: "/logo-dana-blue.png",
       title: "Merchant Portal",
       description: t('projects.1.desc'),
